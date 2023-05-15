@@ -145,12 +145,14 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str =  ""; // Anfangswert
     
+    // 2. Iteration
+
     for (let i = 0; i < arr.length; i++) {  // 0 ---> arr.length-1
         // str += "Test"; // Transponierung
-        str += arr[i]; // Transponierung + Mapping
+        str += arr[i] + GAP; // Letzte GAP zu viel
     }
 
-    return str; 
+    return str.trim() + PUNCT; // wegschneiden durch trim()
 }
 
 
