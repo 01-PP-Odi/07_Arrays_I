@@ -137,18 +137,21 @@ function getSentenceArr(arr) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
-// function getSentenceArr2(arr) {
-//     const GAP = " ";
-//     const PUNCT = ".";
-//     // let str =  
-    
-//     for (let i = 0; i < arr.length; i++) {
-//             output(arr[i]); // Array-Index --> Mapping
-//         }
 
-//     // return str;
-// }
+
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str =  ""; // Anfangswert
+    
+    for (let i = 0; i < arr.length; i++) {  // 0 ---> arr.length-1
+        // str += "Test"; // Transponierung
+        str += arr[i]; // Transponierung + Mapping
+    }
+
+    return str; 
+}
 
 
 
