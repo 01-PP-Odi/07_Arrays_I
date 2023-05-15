@@ -143,7 +143,7 @@ output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
-    let str =  ""; // Anfangswert
+ 
     
 // 4. Iteration join()
     return arr.join(GAP) + PUNCT
