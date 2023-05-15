@@ -145,28 +145,10 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str =  ""; // Anfangswert
     
-    // 2. Iteration mit trim()
+// 4. Iteration join()
+    return arr.join(GAP) + PUNCT
 
-    // for (let i = 0; i < arr.length; i++) {  // 0 ---> arr.length-1
-    //     // str += "Test"; // Transponierung
-    //     str += arr[i] + GAP; // Letzte GAP zu viel
-    // }
-
-    // return str.trim() + PUNCT; // wegschneiden durch trim()
-
-
-    // 3. Iteration mit IF / GAP / PUNCT
-
-     for (let i = 0; i < arr.length; i++) {  // 0 ---> arr.length-1
-          if (i == arr.length-1) {
-            str += arr[i]+ PUNCT; // Ausnahme (letztes Element)
-          } else {
-            str += arr[i]+ GAP; // Regel
-          }
-        }
-    return str;
 }
-
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
 function output(outputStr) {
